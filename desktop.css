@@ -49,6 +49,23 @@
         line-height: 60px;
         text-decoration: none;
         color: #e2e2e2;
+        transition: all .3s;
+    }
+    nav .menu a::after {
+        content: "";
+        border-bottom: 2px solid #fa0;
+        display: block;
+        margin-top: -15px;
+/*        width: 0;*/
+        transform: scaleX(0);
+        transition: all .3s;
+    }
+    nav .menu a:hover {
+        color: #ffda90;
+    }
+    nav .menu a:hover::after {
+/*        width: 100%;*/
+        transform: scaleX(1);
     }
     header {
         padding-top: 300px;
@@ -92,6 +109,12 @@
         background-color: #333;
         color: #eee;
         text-decoration: none;
+        
+        transition: all .3s;
+    }
+    .btn:hover {
+        background-color: #ccc;
+        color: #000;
     }
     .btn-inverse {
         display: inline-block;
